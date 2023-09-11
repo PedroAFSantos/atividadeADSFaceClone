@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Body from './components/Body';
+import logo from "./logo.svg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div className="Centro">
+      <div className ="Position">
+        <div className="PaginaCentral">
+          <div className="Logo">
+        <img src={logo} alt="Facebook"></img>
+        <h2 className="Lema">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
+        </div>
+          <div className="Conteudo">
+            <div className="TamanhoBody">
+              <Body/>
+            </div>
+          </div>
+        <div className="rodape">
+        </div>
+      </div>     
+    </div>
+    </div>
     </div>
   );
 }
